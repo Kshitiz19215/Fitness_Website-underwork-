@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fitness Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-logo"></div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('workouts') }}">Workouts</a></li>
+                <li><a href="{{ url_for('nutrition') }}">Nutrition</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>            
+        </nav>
+        <h1>Contact Us</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="/submit_contact_form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: kshitizsharmacareer@gmail.com</p>
+            <p>Phone: +91 9667007889 </p>
+        </section>
+        <section id="social-media">
+            <h2>Follow Us</h2>
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </section>
+    </footer>
+</body>
+</html>

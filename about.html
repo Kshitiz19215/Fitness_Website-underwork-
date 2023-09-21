@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fitness Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-logo"></div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('workouts') }}">Workouts</a></li>
+                <li><a href="{{ url_for('nutrition') }}">Nutrition</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>            
+        </nav>
+        <h1>About Us</h1>
+    </header>
+    <!-- Main Content Area-->
+    <main>
+        <section id="our-story">
+            <h2>Our Story</h2>
+            <p>Welcome to Fitness Hub, your ultimate destination for fitness and well-being.</p>
+            <p>Founded in 20XX, Fitness Hub is dedicated to helping individuals achieve their fitness goals through personalized workout plans, expert guidance, and a supportive community.</p>
+        </section>
+
+        <section id="our-team">
+            <h2>Our Team</h2>
+            <div class="team-member">
+                <img src="team-member1.jpg" alt="Team Member 1">
+                <h3>Kshitiz Sharma</h3>
+                <p>Personal Trainer</p>
+            </div>
+            <div class="team-member">
+                <img src="team-member2.jpg" alt="Team Member 2">
+                <h3>Gunjan</h3>
+                <p>Nutritionist</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: info@fitnesshub.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </section>
+        <section id="social-media">
+            <h2>Follow Us</h2>
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </section>
+    </footer>
+</body>
+</html>

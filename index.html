@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-logo"></div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('workouts') }}">Workouts</a></li>
+                <li><a href="{{ url_for('nutrition') }}">Nutrition</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>            
+        </nav>
+        <h1>Welcome to Fitness Hub</h1>
+    </header>
+    <main>     
+        <section id="featured-workout">
+            <h2>Featured Workout</h2>
+            <div class="workout-card">
+                <img src="workout.jpg" alt="Workout Image">
+                <h3>Full-Body HIIT</h3>
+                <p>A high-intensity interval training workout for maximum calorie burn!</p>
+                <button>View Details</button>
+            </div>
+        </section>
+
+        <section id="fitness-tips">
+            <h2>Fitness Tips</h2>
+            <div class="tip">
+                <h3>Stay Hydrated</h3>
+                <p>Drink plenty of water throughout the day to keep your body hydrated.</p>
+            </div>
+            <div class="tip">
+                <h3>Healthy Eating</h3>
+                <p>Eat a balanced diet with plenty of fruits, vegetables, and lean proteins.</p>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Client Testimonials</h2>
+            <div class="testimonial">
+                <p>"Fitness Hub transformed my life. I've never felt better!"</p>
+                <p class="client-name">- Aashish</p>
+            </div>
+            <div class="testimonial">
+                <p>"The trainers here are fantastic. They really care about your progress."</p>
+                <p class="client-name">- Saharsh</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: kshitizsharmacareer@gmail.com</p>
+            <p>Phone: +91 9667007889 </p>
+        </section>
+        <section id="social-media">
+            <h2>Follow Us</h2>
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </section>
+    </footer>
+</body>
+</html>

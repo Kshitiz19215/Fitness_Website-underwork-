@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workouts - Fitness Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> 
+</head>
+<body>
+    <header>
+        <div class="header-logo"></div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('workouts') }}">Workouts</a></li>
+                <li><a href="{{ url_for('nutrition') }}">Nutrition</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>            
+        </nav>
+        <h1>Workout Plans</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="workout-plan">
+            <img src="workout-plan1.jpg" alt="Workout Plan 1">
+            <h2>Full-Body HIIT</h2>
+            <p>A high-intensity interval training workout for maximum calorie burn!</p>
+            <ul>
+                <li>Duration: 30 minutes</li>
+                <li>Difficulty: Intermediate</li>
+                <li>Equipment: Dumbbells, Mat</li>
+            </ul>
+        </section>
+
+        <section class="workout-plan">
+            <img src="workout-plan2.jpg" alt="Workout Plan 2">
+            <h2>Yoga for Beginners</h2>
+            <p>Relax, stretch, and strengthen your body with this beginner-friendly yoga routine.</p>
+            <ul>
+                <li>Duration: 20 minutes</li>
+                <li>Difficulty: Beginner</li>
+                <li>Equipment: Yoga Mat</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: kshitizsharmacareer@gmail.com</p>
+            <p>Phone: +91 9667007889 </p>
+        </section>
+        <section id="social-media">
+            <h2>Follow Us</h2>
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </section>
+    </footer>
+</body>
+</html>
